@@ -13,6 +13,46 @@
   </head>
 
   <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Contacts List</h1>
+
+      <!-- Adding a form to input new contacts for contact list -->
+      <form id="addContactForm" class="mb-4">
+        <div class="form-row">
+          <!-- Column for Name input -->
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="contactName"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <!-- Column for Phone Number input -->
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              id="contactPhone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <!-- Column for Add Contact button -->
+          <div class="col">
+            <button type="submit" class="btn btn-primary">Add Contact</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Card columns to hold the contact cards -->
+      <div id="contact-list" class="card-columns">
+        <!-- Cards will align in columns and stack responsively -->
+        <!-- JavaScript will dynamically add Bootstrap-styled contact cards here -->
+      </div>
+    </div>
+
     <!-- JS Libraries go here ie. Bootstrap Bundle JS -->
     <!-- Custom JS Goes Here -->
     <script src="./crud_project.js"></script>
